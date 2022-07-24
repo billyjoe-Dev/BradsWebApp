@@ -1,1 +1,2 @@
 # BradsWebApp
+This is a simple portfolio and blog built with the .NET 6 hosted version of Blazor WebAssembly. I'm building this application to showcase my skills and experience as a Software Engineer while also taking the opportunity to become more proficient in C# and .NET. In addition, I will be implementing a personal blog, where I will write about development topics that interest me and work on improving my technical writing skills.
