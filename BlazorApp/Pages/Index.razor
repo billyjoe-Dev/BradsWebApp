@@ -1,0 +1,245 @@
+﻿@page "/"
+
+@inject IJSRuntime jsRuntime
+
+@using PortfolioWebsite.Client.Shared.Components;
+
+<PageTitle>Bradfield Phillips | Portfolio</PageTitle>
+
+@* Main Hero Section *@
+<section id="main-hero">
+    <div class="hero min-h-screen py-10">
+        <div class="hero-content flex-col lg:flex-row-reverse h-full w-[80vw] max-w-6xl md:px-5">
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
+                <svg class="hexagon version=" 1.1" xmlns="http://www.w3.org/2000/svg" width="330" height="342"
+                     viewbox="0 0 173.20508075688772 200" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);">
+                    <path d="M69.28203230275508 9.999999999999998Q86.60254037844386 0 103.92304845413264 9.999999999999998L155.88457268119896 40Q173.20508075688772 50 173.20508075688772 70L173.20508075688772 130Q173.20508075688772 150 155.88457268119896 160L103.92304845413264 190Q86.60254037844386 200 69.28203230275508 190L17.320508075688775 160Q0 150 0 130L0 70Q0 50 17.320508075688775 40Z"
+                          stroke="#b3c5ef" stroke-width="2" fill="transparent" />
+                </svg>
+                <div class="img-wrapper max-w-sm rounded-lg shadow-2xl mask mask-hexagon">
+                    <img src="images/me-devImage.jpeg"
+                         class="max-w-sm rounded-lg shadow-2xl mask mask-hexagon tint bg-blend-color" />
+                </div>
+            </div>
+            <div>
+                <h1 class="text-xl font-bold font-mono" data-aos="fade-right" data-aos-delay="200">Hi, my name is</h1>
+                <h1 class="text-7xl font-bold" data-aos="fade-right" data-aos-delay="400">Bradfield Phillips</h1>
+                <p class="pt-5 pb-6 text-xl font-bold" data-aos="fade-right" data-aos-delay="600">
+                    — Software Developer with 3+ years of industry experience:
+                </p>
+                <p class="pt-3 pb-9 text-xl" data-aos="fade-right" data-aos-delay="800">
+                    I’ve launched this (my Blog) project to apply the skills I developed in the past 3 years of my development career. Recently, I shifted my focus to .NET MAUI and Blazor with C# as the main language to design and build a cross-platform e-commerce solution for a small start-up business, Near2Perfection for free!
+                </p>
+                <button onclick="location.href='https://linktr.ee/CarmenMcDonald'" ; class="btn btn-primary my-1" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000">Blog Coming Soon!</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* About Me Section *@
+<section id="about-me">
+    <div class="hero min-h-screen bg-base-100 overflow-hidden">
+        <div class="hero-content prose flex-col-reverse lg:flex-row-reverse py-11 px-1 sm:px-0" data-aos="fade-right" data-aos-delay="100">
+            <div class="text-left px-4 max-w-lg">
+                <div class="text-center">
+                    <h1 class="hidden lg:flex text-5xl font-bold m-auto">About me</h1>
+                </div>
+
+                <p class="hidden lg:flex text-center lg:text-left font-medium py-3 max-w-xl" data-aos="fade-right" data-aos-delay="200">
+                    @helloText
+                </p>
+                <div class="divider hidden lg:flex"></div>
+                <p class="m-0" data-aos="fade-right" data-aos-delay="300">
+                    Over the last 3 years, I've utilized a large variety of technologies to develop <strong>
+                        cross-platform apps,
+                        websites, games, and more.
+                    </strong>
+                </p>
+                <p data-aos="fade-right" data-aos-delay="400">Here are a few technologies I’ve been working with recently & would like to add to my list of skill set:</p>
+                <ul class="tech-list">
+                    <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="500">C#</li>
+                    <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="700">Model View Controller</li>
+                    <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="700">MS SQL Server</li>
+                    <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="700">NHibernate</li>
+                    <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="600">.NET 6</li>
+                    <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="700">.NET MAUI</li>
+                    <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="800">Blazor WebAssembly</li>
+                    <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="1100">JavaScript (ES6+)</li>
+                    <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="1200">HTML</li>
+                    <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="1200">Tailwind CSS</li>
+                    <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="1200">IoT</li>
+                    <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="900">Azure</li>
+                </ul>
+                <p class="py-2 mt-[60px]" data-aos="fade-right">
+                    Today, one of my main priorities is to change <a href="https://linktr.ee/CarmenMcDonald">
+                        this blog
+                    </a> by designing and building a fully funtional <strong>cross-platform e-commerce app</strong> from the ground up, worth more than $2000 from UP-WORK.
+                </p>
+                <div class="text-center">
+                    <div class="mockup-phone max-h-[300px] mt-4 mb-[-140px] inline-block lg:hidden" data-aos="fade-up">
+                        <div class="camera"></div>
+                        <div class="display">
+                            <div class="artboard artboard-demo phone-1 bg-[#85ddcd]">
+                                <img src="images/N2P-abcImage.webp" class="w-[60%] absolute top-11 m-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w-full max-w-sm content-center block">
+                <div id="cloud" class="lg:mr-8" data-aos="zoom-in" data-aos-delay="300"></div>
+                <div class="mockup-phone max-h-[300px] mt-28 mb-[-170px] hidden lg:inline-block" data-aos="fade-up">
+                    <div class="camera"></div>
+                    <div class="display">
+                        <div class="artboard artboard-demo phone-1 bg-[#85ddcd]">
+                            <img src="images/N2P-abcImage.webp" class="absolute top-11 w-[60%] m-0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider flex lg:hidden m-0"></div>
+            <p class="flex lg:hidden text-center lg:text-left py-4 px-4 m-0 font-medium max-w-xl" data-aos="fade-right" data-aos-delay="200">
+                @helloText
+            </p>
+            <div class="text-center">
+                <h1 class="flex lg:hidden text-5xl font-bold m-auto" data-aos="fade-right">About me</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* Experience Section *@
+<section id="experience">
+    <div class="hero bg-black bg-opacity-20">
+        <div class="hero-content w-full lg:w-3/4 flex-col lg:flex-row pt-11 lg:space-x-4">
+            <div class="self-center lg:self-baseline lg:sticky top-16 pt-6 lg:mb-80 text-left max-w-[80vw] lg:min-w-[22rem]">
+                <h1 class="text-5xl font-bold" data-aos="fade-right">Experience</h1>
+                <p class="py-4" data-aos="fade-right">
+                    My professional journey began <strong>at the age of 21</strong>, when I recieved my <strong>
+                        first technical certification, CompTIA A+ 701-702.
+                    </strong> I went further to advanced in completing my first PC Engineering Diploma based on <strong>MCITP server 2008.</strong>
+                </p>
+                <p class="py-6" data-aos="fade-right">
+                    I relocated to Cape Town, South Africa in 2013 to further my studies achieving my <strong>MCSA server 2016 badge.</strong> I made a start with my professional career in Cape Town as
+                        Desktop Support L1 Engineer at <strong><a href="https://www.tlink.co.za/"> Computer Technolink</a>
+                    </strong> in 2017.
+                </p>
+                <p class="py-6" data-aos="fade-right">
+                    After 2 years, working close with the MD to whom I can classify as my <strong>Mentor</strong> today, I found an opportunity to up-scale and broaden my skills and knowledge at a 
+                    <strong>Investment Management and Corporate Organization,<a href="https://www.allangray.co.za/"> Allan Gray.</a></strong><br />
+                    It was a remarkable, warm and fully loaded high energy experience.
+                    It was an absolute privilege to work amongst the best, delivering high quality and quick remote and hands-on support to roughly 1200 users, making sure they have a fully profiled workstation during the Covid-19 Pandemic.
+                </p>
+                <p class="py-6" data-aos="fade-right">
+                    As I progressed through my IT career during the Pandemic, I've developed and found a new passion for <strong>Software Development</strong>.
+                    It started off as a self-investment, investing in a fully equipped Profit with JavaScript course at <strong><a href="https://www.cleverprogrammer.com/"> Clever Programmer.</a></strong>
+                </p>
+                <p class="py-6" data-aos="fade-right">
+                    I am currently working alongside senior developers as a full time developer at <strong><a href="https://www.veridianint.com/">Veridian International</a></strong>. My responsibilities include writing clean and robust code, code reviews and testing and deployment of a high-profile, consumer – facing web applications.
+                </p>
+            </div>
+            <div class="flex-shrink-0 w-full lg:w-3/5 lg:mt-40 min-w-fit" data-aos="fade-right">
+                <ul class="lg:steps lg:steps-vertical text-left lg:pl-1">
+                    <div class="xp-divider">2012</div>
+                    <li data-content="2012" class="step step-primary">
+                        <div class="xp-container">
+                            <ExperienceCard Title="CompTIA" Body="Earned CompTIA A+ Certification" Image="images/a-plus-logo.svg"
+                                            ImageAlt="CompTIA A+ Certification Logo" ImageClass="w-[150px]" Tags="IT" />
+                        </div>
+                    </li>
+                    <div class="xp-divider">2016</div>
+                    <li data-content="2016" class="step step-primary">
+                        <div class="xp-container">
+                            <ExperienceCard Title="MCSA 2016" Body="This is one of my greatest achievement(s)"
+                                            Image="images/MCSA2016-Badge.webp" ImageAlt="Author: Anthony Sequeira" ImageClass="w-[120px]"
+                                            CardClass="bg-bold-blue" Tags="MCSA 70-740,MCSA 70-741, MCSA 70-742" />
+                        </div>
+                    </li>
+                    <div class="xp-divider">2022</div>
+                    <li href="#experience-2022" data-content="2022" class="step step-primary current">
+                        <div class="xp-container">
+                            <ExperienceCard Title="MSBuild2022" Body="Participated in the MSBuild22. I was lucky to take home a backpack fully loaded with valuable content 😊"
+                                            Image="images/Build22-Image.webp" ImageAlt="Microsoft Event"
+                                            ImageClass="w-[120px]" Tags="Cloud Ubiquity,App Ubiquity,Cloud Native,Hybrid AI, Metaverse," />
+                            <ExperienceCard Title="Azure" Body="Bagged my first cloud certification. Thanks to Thomas Muller and Microsoft LEARN. ⌛. . . AZ-204"
+                                            Image="images/AZ-900_logo.png" ImageAlt="Microsoft Azure - Fundamentals"
+                                            ImageClass="w-[120px]" Tags="AZ-900,Cloud-Computing,Azure Fundamentals" />
+                        </div>
+                    </li>
+                    <div class="xp-divider">2023</div>
+                    <li data-content="2023" class="step step-neutral">
+                        <div class="xp-container">
+                            <ExperienceCard Title="Freelance Teaching" Body="I would be humbled to share the basic programming knowlegde I've gained over the pass 3yrs."
+                                            Image="images/calendar-icon.svg" ImageAlt="Calendar Icon" ImageClass="w-[120px]"
+                                            Tags="C#,HTML/CSS,.NET Core,Blazor,Xamarin/Maui" />
+                            <ExperienceCard Title="What's Next?" Body="Interested in working together? Let's talk."
+                                            Image="images/lets-work-together.svg" ImageAlt="Let's Work Together text" ImageClass="w-[120px]"
+                                            CardClass="bg-bold-blue" Tags="Full-time,Contract" />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* Contact Section *@
+<section id="contact">
+    <div class="hero min-h-[35rem] bg-base-200">
+        <div class="hero-content text-center">
+            <div class="max-w-md px-4">
+                <h1 class="text-5xl font-bold" data-aos="fade-down">Get In Touch</h1>
+                <p class="py-6" data-aos="fade-down">
+                    My mailbox is always open, whether you have a question or simply want to say hello,
+                    I will do my best to respond!
+                </p>
+                <button onclick="location.href='mailto:hello@bradfield-dev.com'" ; class="btn btn-primary" data-aos="fade-in">Say Hello</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+@code {
+    private String helloText = "👋 Hello! I am a Software Developer with a strong passion for Technology and learning new things. Self-directed and disciplined with 3 years’ experience building client-facing web and mobile applications. Although rugby is my sport since young age, I have an incurable love and enjoy watching F1 and soccer. My TV series include GOT, Stranger Things and The Big Bang Theory. My goal is to continue being a part of a successful company where I can make a positive difference to staff, peers and customers. New challenges are more appealing than the status quo.";
+    
+    protected override void OnAfterRender(bool firstRender)
+    {
+        // Always execute conditionally for loading data, otherwise this will load
+        // every time the page refreshes!
+        if (firstRender)
+        {
+            createCloud();
+            startAOS();
+        }
+    }
+
+    /*
+    * Load the word cloud data and set properties.
+    */
+    public async void createCloud()
+    {
+        // TODO: Pull this from the database
+        List<string> words = new List<string> {
+          "C#", ".NET", "JavaScript", "MVC", "NHibernate", "Python", "JS", "Node.js", "Blazor",
+          "SQL Server", "React Native", "Xamarin", "MAUI", "HTML",
+          "CSS", "Assembly", "Cognitive AI"
+        };
+
+        Dictionary<string, string> options = new Dictionary<string, string>() {
+          {"radius", "180"},
+          {"maxSpeed", "slow"},
+          {"initSpeed", "slow"},
+          {"direction", "140"}, // right-bottom
+          {"keep", "true"}      // interact with cursor move on mouse out
+        };
+
+        // Generate the word cloud
+        await jsRuntime.InvokeAsync<object>("TagCloud", "#cloud", words, options);
+    }
+
+    public async void startAOS()
+    {
+        await jsRuntime.InvokeAsync<object>("AOS.init");
+    }
+}

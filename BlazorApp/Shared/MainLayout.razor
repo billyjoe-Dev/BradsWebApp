@@ -1,0 +1,17 @@
+﻿@using PortfolioWebsite.Client.Shared.Components
+
+@inherits LayoutComponentBase
+
+<div class="page">
+    <main>
+        <AppNavbar/>
+        <div class="progress transition-all ease-linear translate-y-0"></div>
+        
+        @* Main Content *@
+        <article>
+            @Body
+        </article>
+        
+        <AppFooter/>
+    </main>
+</div>
