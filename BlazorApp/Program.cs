@@ -1,6 +1,6 @@
+using Majorsoft.Blazor.Components.Common.JsInterop;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using Majorsoft.Blazor.Components.Common.JsInterop;
 using PortfolioWebsite.Client;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
