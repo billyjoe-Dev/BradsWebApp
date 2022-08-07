@@ -31,7 +31,7 @@ The portfolio is currently in an early stage of development. So far, I have comp
 ## Planned Features
 - [ ] Add blog
 - [ ] Add featured projects section
-:heavy_check_mark: Add custom domain with SSL Certificate [bradfield-dev.com](https://bradfield-dev.com)
+:heavy_check_mark: Add custom domain with SSL Certificate [bradfield-dev.com](https://bradfield-dev.com) \
 - [ ] Work on mobile friendliness
 - [ ] Finish up with Server
 - [ ] Render globalized and localized content from DB
