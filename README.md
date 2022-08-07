@@ -29,11 +29,11 @@ The portfolio is currently in an early stage of development. So far, I have comp
 :heavy_check_mark: Finished the main page
 
 ## Planned Features
-- [ ] Add blog \
+- [ ] Add blog
 - [ ] Add featured projects section \
 :heavy_check_mark: Add custom domain with SSL Certificate [bradfield-dev.com](https://bradfield-dev.com) \
-- [ ] Work on mobile friendliness \
-- [ ] Finish up with Server \
+- [ ] Work on mobile friendliness
+- [ ] Finish up with Server
 - [ ] Render globalized and localized content from DB
 
 ## Running the project
