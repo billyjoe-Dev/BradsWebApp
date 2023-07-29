@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Bradfield\Downloads\BlazorPortfolioWebsite-main\BlazorPortfolioWebsite-main\PortfolioWebsite\Shared\PortfolioWebsite.Shared.csproj" />
+    <!--<ProjectReference Include="C:\Users\Bradfield\Downloads\BlazorPortfolioWebsite-main\BlazorPortfolioWebsite-main\PortfolioWebsite\Shared\PortfolioWebsite.Shared.csproj" />-->
   </ItemGroup>
 
 </Project>

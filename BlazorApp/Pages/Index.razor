@@ -22,59 +22,66 @@
                 </div>
             </div>
             <div>
-                <h1 class="text-xl font-bold font-mono" data-aos="fade-right" data-aos-delay="200">Hi, my name is</h1>
+                <h1 class="text-xl font-bold font-mono" data-aos="fade-right" data-aos-delay="200">Hi, I'm</h1>
                 <h1 class="text-7xl font-bold" data-aos="fade-right" data-aos-delay="400">Bradfield Phillips</h1>
                 <p class="pt-5 pb-6 text-xl font-bold" data-aos="fade-right" data-aos-delay="600">
-                    — Software Developer with 3+ years of industry experience:
+                    — I am a Software Developer with over 3 years of industry experience:
                 </p>
                 <p class="pt-3 pb-9 text-xl" data-aos="fade-right" data-aos-delay="800">
-                    I’ve launched this (my Blog) project to apply the skills I developed in the past 3 years of my development career. Recently, I shifted my focus to .NET MAUI and Blazor with C# as the main language to design and build a cross-platform e-commerce solution for a small start-up business, Near2Perfection for free!
+                    I have launched this Portfolio Blog project to apply the skills I have developed throughout my 3-year career as a developer. Recently, I have shifted my focus to working with .NET MAUI and Blazor, using C# as the main language, to design and build a cross-platform e-commerce solution for a small start-up business called Near2Perfection.
                 </p>
-                <button onclick="location.href='https://linktr.ee/CarmenMcDonald'" ; class="btn btn-primary my-1" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000">Blog Coming Soon!</button>
+                <button onclick="location.href='https://linktr.ee/CarmenMcDonald'" target="_blank" rel="noopener noreferrer" ; class="btn btn-primary my-1" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000">Blog Coming Soon!</button>
             </div>
         </div>
     </div>
 </section>
 
-@* About Me Section *@
+@* About Me *@
 <section id="about-me">
     <div class="hero min-h-screen bg-base-100 overflow-hidden">
-        <div class="hero-content prose flex-col-reverse lg:flex-row-reverse py-11 px-1 sm:px-0" data-aos="fade-right" data-aos-delay="100">
+        <div class="hero-content prose flex-col-reverse lg:flex-row-reverse py-11 px-1 sm:px-0"
+             data-aos="fade-right" data-aos-delay="100">
             <div class="text-left px-4 max-w-lg">
                 <div class="text-center">
                     <h1 class="hidden lg:flex text-5xl font-bold m-auto">About me</h1>
                 </div>
 
-                <p class="hidden lg:flex text-center lg:text-left font-medium py-3 max-w-xl" data-aos="fade-right" data-aos-delay="200">
+                <p class="hidden lg:flex text-center lg:text-left font-medium py-3 max-w-xl"
+                   data-aos="fade-right" data-aos-delay="200">
                     @helloText
                 </p>
+
                 <div class="divider hidden lg:flex"></div>
+
                 <p class="m-0" data-aos="fade-right" data-aos-delay="300">
-                    Over the last 3 years, I've utilized a large variety of technologies to develop <strong>
-                        cross-platform apps,
-                        websites, games, and more.
-                    </strong>
+                    Over the last 3 years, I've utilized a large variety of technologies to develop
+                    <strong>cross-platform apps, websites, games, and more.</strong>
                 </p>
-                <p data-aos="fade-right" data-aos-delay="400">Here are a few technologies I’ve been working with recently & would like to add to my list of skill set:</p>
+
+                <p data-aos="fade-right" data-aos-delay="400">
+                    Here are a few technologies I’ve been working with recently and would like to add
+                    to my list of skill sets:
+                </p>
+
                 <ul class="tech-list">
-                    <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="500">C#</li>
-                    <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="700">Model View Controller</li>
-                    <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="700">MS SQL Server</li>
-                    <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="700">NHibernate</li>
-                    <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="600">.NET 6</li>
-                    <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="700">.NET MAUI</li>
-                    <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="800">Blazor WebAssembly</li>
-                    <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="1100">JavaScript (ES6+)</li>
-                    <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="1200">HTML</li>
-                    <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="1200">Tailwind CSS</li>
-                    <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="1200">IoT</li>
-                    <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="900">Azure</li>
+                    @foreach (var technology in technologies)
+                    {
+                        <li data-aos="fade-right" data-aos-anchor=".tech-list" data-aos-delay="@(500 + (100 * technology.Delay))">
+                            @technology.Name
+                        </li>
+                    }
                 </ul>
+
                 <p class="py-2 mt-[60px]" data-aos="fade-right">
-                    Today, one of my main priorities is to change <a href="https://linktr.ee/CarmenMcDonald">
+                    Today, one of my main priorities is to change
+                    <a href="https://linktr.ee/CarmenMcDonald" target="_blank" rel="noopener noreferrer">
                         this blog
-                    </a> by designing and building a fully funtional <strong>cross-platform e-commerce app</strong> from the ground up, worth more than $2000 from UP-WORK.
+                    </a>
+
+                    by designing and building a fully functional
+                    <strong>cross-platform e-commerce app</strong> from the ground up, worth more than $2000 from UP-WORK.
                 </p>
+
                 <div class="text-center">
                     <div class="mockup-phone max-h-[300px] mt-4 mb-[-140px] inline-block lg:hidden" data-aos="fade-up">
                         <div class="camera"></div>
@@ -85,8 +92,8 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+
             <div class="w-full max-w-sm content-center block">
                 <div id="cloud" class="lg:mr-8" data-aos="zoom-in" data-aos-delay="300"></div>
                 <div class="mockup-phone max-h-[300px] mt-28 mb-[-170px] hidden lg:inline-block" data-aos="fade-up">
@@ -98,10 +105,14 @@
                     </div>
                 </div>
             </div>
+
             <div class="divider flex lg:hidden m-0"></div>
-            <p class="flex lg:hidden text-center lg:text-left py-4 px-4 m-0 font-medium max-w-xl" data-aos="fade-right" data-aos-delay="200">
+
+            <p class="flex lg:hidden text-center lg:text-left py-4 px-4 m-0 font-medium max-w-xl"
+               data-aos="fade-right" data-aos-delay="200">
                 @helloText
             </p>
+
             <div class="text-center">
                 <h1 class="flex lg:hidden text-5xl font-bold m-auto" data-aos="fade-right">About me</h1>
             </div>
@@ -122,21 +133,21 @@
                 </p>
                 <p class="py-6" data-aos="fade-right">
                     I relocated to Cape Town, South Africa in 2013 to further my studies achieving my <strong>MCSA server 2016 badge.</strong> I made a start with my professional career in Cape Town as
-                        Desktop Support L1 Engineer at <strong><a href="https://www.tlink.co.za/"> Computer Technolink</a>
+                        Desktop Support L1 Engineer at <strong><a href="https://www.tlink.co.za/" rel="noopener noreferrer"> Computer Technolink</a>
                     </strong> in 2017.
                 </p>
                 <p class="py-6" data-aos="fade-right">
                     After 2 years, working close with the MD to whom I can classify as my <strong>Mentor</strong> today, I found an opportunity to up-scale and broaden my skills and knowledge at a 
-                    <strong>Investment Management and Corporate Organization,<a href="https://www.allangray.co.za/"> Allan Gray.</a></strong><br />
+                    <strong>Investment Management and Corporate Organization,<a href="https://www.allangray.co.za/" rel="noopener noreferrer"> Allan Gray.</a></strong><br />
                     It was a remarkable, warm and fully loaded high energy experience.
                     It was an absolute privilege to work amongst the best, delivering high quality and quick remote and hands-on support to roughly 1200 users, making sure they have a fully profiled workstation during the Covid-19 Pandemic.
                 </p>
                 <p class="py-6" data-aos="fade-right">
                     As I progressed through my IT career during the Pandemic, I've developed and found a new passion for <strong>Software Development</strong>.
-                    It started off as a self-investment, investing in a fully equipped Profit with JavaScript course at <strong><a href="https://www.cleverprogrammer.com/"> Clever Programmer.</a></strong>
+                    It started off as a self-investment, investing in a fully equipped Profit with JavaScript course at <strong><a href="https://www.cleverprogrammer.com/" rel="noopener noreferrer"> Clever Programmer.</a></strong>
                 </p>
                 <p class="py-6" data-aos="fade-right">
-                    I am currently working alongside senior developers as a full time developer at <strong><a href="https://www.veridianint.com/">Veridian International</a></strong>. My responsibilities include writing clean and robust code, code reviews and testing and deployment of a high-profile, consumer – facing web applications.
+                    I am currently working alongside senior developers as a full time developer at <strong><a href="https://www.veridianint.com/" rel="noopener noreferrer">Veridian International</a></strong>. My responsibilities include writing clean and robust code, code reviews and testing and deployment of a high-profile, consumer – facing web applications.
                 </p>
             </div>
             <div class="flex-shrink-0 w-full lg:w-3/5 lg:mt-40 min-w-fit" data-aos="fade-right">
@@ -185,7 +196,7 @@
 </section>
 
 @* Contact Section *@
-<section id="contact">
+<section id="contact" class="mt-10 mb-10">
     <div class="hero min-h-[35rem] bg-base-200">
         <div class="hero-content text-center">
             <div class="max-w-md px-4">
@@ -194,30 +205,28 @@
                     My mailbox is always open, whether you have a question or simply want to say hello,
                     I will do my best to respond.
                 </p>
-                <button onclick="location.href='mailto:hello@bradfield-dev.com'" ; class="btn btn-primary" data-aos="fade-in">Say Hello</button>
+                <button onclick="location.href='mailto:hello@bradfield-dev.com'" class="btn btn-primary" data-aos="fade-in" aria-label="Send an email">Say Hello</button>
             </div>
         </div>
     </div>
 </section>
 
+
 @code {
-    private String helloText = "👋 Hello! I am a Software Developer with a strong passion for Technology and learning new things. Self-directed and disciplined with 3 years’ experience building client-facing web and mobile applications. Although rugby is my sport since of young age, I have an incurable love and enjoy watching F1 and soccer. My TV series include GOT, Stranger Things and The Big Bang Theory. My goal is to continue being a part of a successful company where I can make a positive difference to staff, peers and customers. New challenges are more appealing than the status quo.";
-    
-    protected override void OnAfterRender(bool firstRender)
+    private string helloText = "👋 Hello! I am a Software Developer with a strong passion for Technology and learning new things. Self-directed and disciplined with 3 years’ experience building client-facing web and mobile applications. Although rugby is my sport since of young age, I have an incurable love and enjoy watching F1 and soccer. My TV series include GOT, Stranger Things and The Big Bang Theory. My goal is to continue being a part of a successful company where I can make a positive difference to staff, peers and customers. New challenges are more appealing than the status quo.";
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         // Always execute conditionally for loading data, otherwise this will load
         // every time the page refreshes!
         if (firstRender)
         {
-            createCloud();
-            startAOS();
+            await CreateCloudAsync();
+            await StartAOSAsync();
         }
     }
 
-    /*
-    * Load the word cloud data and set properties.
-    */
-    public async void createCloud()
+    private async Task CreateCloudAsync()
     {
         // TODO: Pull this from the database
         List<string> words = new List<string> {
@@ -235,11 +244,25 @@
         };
 
         // Generate the word cloud
-        await jsRuntime.InvokeAsync<object>("TagCloud", "#cloud", words, options);
+        try
+        {
+            await jsRuntime.InvokeVoidAsync("TagCloud", "#cloud", words, options);
+        }
+        catch (Exception ex)
+        {
+            // Handle the exception here
+        }
     }
 
-    public async void startAOS()
+    private async Task StartAOSAsync()
     {
-        await jsRuntime.InvokeAsync<object>("AOS.init");
+        try
+        {
+            await jsRuntime.InvokeVoidAsync("AOS.init");
+        }
+        catch (Exception ex)
+        {
+            // Handle the exception here
+        }
     }
 }
