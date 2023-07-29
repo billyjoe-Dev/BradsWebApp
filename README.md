@@ -1,6 +1,6 @@
 # Blazor WebAssembly (WASM) .NET Hosted Portfolio Site
 
-Check it out here: [https://bradfieldportfolio.azurewebsites.net](https://bradfieldporfolio.azurewebsites.net/)
+Check it out here: [bradfieldportfolio.azurewebsites.net](https://bradfieldporfolio.azurewebsites.net/)
 
 ## Overview 
 This is a simple portfolio and blog built with the .NET 6 hosted version of [Blazor WebAssembly](https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor). I'm building this application to showcase my skills and experience as a Software Developer while also taking the opportunity to become more proficient in C# and .NET. In addition, I will be implementing a personal blog, where I will write about development topics that interest me and work on improving my technical writing skills.
@@ -31,7 +31,7 @@ The portfolio is currently in an early stage of development. So far, I have comp
 ## Planned Features
 - [ ] Add blog
 - [ ] Add featured projects section \
-:heavy_check_mark: Add custom domain with SSL Certificate [bradfield-dev.com](https://bradfield-dev.com)
+:heavy_check_mark: Add custom domain with SSL Certificate [bradfieldportfolio.azurewebsites.net](https://bradfieldporfolio.azurewebsites.net)
 - [ ] Work on mobile friendliness
 - [ ] Finish up with Server
 - [ ] Render globalized and localized content from DB
