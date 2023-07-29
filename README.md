@@ -25,7 +25,7 @@ The portfolio is currently in an early stage of development. So far, I have comp
 :heavy_check_mark: Setup the project dependencies \
 :heavy_check_mark: Created a temporary landing page \
 :heavy_check_mark: Deployed the project to a [Azure](https://azure.microsoft.com/en-us/) droplet \
-:heavy_check_mark: Set up domain Mailbox [Say hello Bradfield](hello@bradfield-dev.com) \
+:heavy_check_mark: Set up domain Mailbox [Say hello Bradfield](mailto:hello@bradfield-dev.com) \
 :heavy_check_mark: Finished the main page
 
 ## Planned Features
