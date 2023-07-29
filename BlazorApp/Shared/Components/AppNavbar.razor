@@ -5,8 +5,8 @@
 @implements IAsyncDisposable
 
 @{
-    RenderFragment<ScrollLinkData> link = (data) => @<li>
-        <a @onclick="@((e) => _scrollHandler.ScrollToElementByIdAsync(@data.ScrollAnchorId))">@data.DisplayText</a>
+    RenderFragment<ScrollLinkData> link = (data) => @<li key="@data.DisplayText">
+        <a @onclick="(e) => _scrollHandler.ScrollToElementByIdAsync(data.ScrollAnchorId)">@data.DisplayText</a>
     </li>;
 }
 
@@ -47,7 +47,7 @@
     {
         new ScrollLinkData("About", "about-me"),
         new ScrollLinkData("Experience", "experience"),
-        // new ScrollLinkData("Work", "work"),
+        //new ScrollLinkData("Work", "work"),
         new ScrollLinkData("Contact", "contact")
     };
 
